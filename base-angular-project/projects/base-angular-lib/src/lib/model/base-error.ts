@@ -10,13 +10,11 @@ export class BaseError extends BaseModel {
 
   code: number;
   message: string;
-  extra?: any;
 
   constructor(code: number, description: string, extra?: any) {
-    super(description);
+    super(description, extra);
     this.code = code;
     this.message = description;
-    this.extra = extra;
   }
 
   static newInstance(code: number, description: string, extra?: any): BaseError {
