@@ -6,6 +6,9 @@
   },
   "whitelistedNonPeerDependencies": [
     "@types/uuid",
-    "uuid"
+    "uuid",
+    "@ngx-translate/core",
+    "@angular/flex-layout",
+    "@angular/cdk"
   ]
 }

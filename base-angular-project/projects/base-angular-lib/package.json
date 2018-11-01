@@ -6,6 +6,9 @@
     "@angular/core": "^7.0.0"
   },
   "dependencies": {
+    "@angular/cdk": "^7.0.2",
+    "@angular/flex-layout": "^7.0.0-beta.19",
+    "@ngx-translate/core": "^11.0.0",
     "@types/uuid": "^3.4.4",
     "uuid": "^3.3.2"
   }
