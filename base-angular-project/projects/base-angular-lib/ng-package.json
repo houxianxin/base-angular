@@ -3,5 +3,9 @@
   "dest": "../../dist/base-angular-lib",
   "lib": {
     "entryFile": "src/public_api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "@types/uuid",
+    "uuid"
+  ]
 }
