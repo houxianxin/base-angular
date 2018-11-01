@@ -10,8 +10,15 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     TranslateModule,
     FlexLayoutModule
   ],
-  declarations: [BaseAngularLibComponent],
-  exports: [BaseAngularLibComponent, TranslateModule, FlexLayoutModule]
+  declarations: [
+    BaseAngularLibComponent
+  ],
+  exports: [
+    BaseAngularLibComponent,
+    HttpClientModule,
+    TranslateModule,
+    FlexLayoutModule
+  ]
 })
 export class BaseAngularLibModule {
 }
