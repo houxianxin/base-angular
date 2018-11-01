@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "base-angular-lib": [
+        "dist/base-angular-lib"
+      ],
+      "base-angular-lib/*": [
+        "dist/base-angular-lib/*"
+      ]
+    }
   }
 }
