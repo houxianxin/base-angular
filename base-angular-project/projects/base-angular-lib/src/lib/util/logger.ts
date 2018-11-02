@@ -37,7 +37,7 @@ export class Logger extends BaseService {
     if (isDevMode()) {
       try {
         this.d(`${tag} printObj`, JSON.stringify(obj, null, 2));
-      } catch (err: any) {
+      } catch (err) {
         this.e(`${tag} printObj`, err.toString());
       }
     }
