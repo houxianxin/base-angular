@@ -12,3 +12,4 @@ export * from './lib/model/base-error';
 export * from './lib/service/base-service';
 export * from './lib/ui/base-component';
 export * from './lib/ui/ui.interface';
+export * from './lib/util/logger';
