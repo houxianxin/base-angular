@@ -1,0 +1,78 @@
+/**
+ipad 1024 * 768
+iphone6 375 * 667
+
+width
+height
+min max
+margin
+padding
+top left bottom right
+font-size
+百分比
+rem
+px
+
+angular flex-layout
+
+xs	width < 600px
+sm	600px <= width < 960px
+md	960px <= width < 1279px
+lg	1280px <= width < 1919px
+xl	1920px <= width < 5000px
+
+lt-sm	width <= 599px
+lt-md	width <= 959px
+lt-lg	width <= 1279px
+lt-xl	width <= 1919px
+
+gt-xs	width >= 600px
+gt-sm	width >= 960px
+gt-md	width >= 1280px
+gt-lg	width >= 1920px
+ */
+
+@media (min-width: 1024px){
+  html{font-size: 16px !important;}
+} /*>=1024的设备*/
+
+@media (min-width: 1100px) {
+  html{font-size: 16px !important;}
+} /*>=1100的设备*/
+@media (min-width: 1280px) {
+  html{font-size: 16px !important;}
+} /*>=1280的设备*/
+
+@media (min-width: 1366px) {
+  html{font-size: 16px !important;}
+}
+
+@media (min-width: 1440px) {
+  html{font-size: 16px !important;}
+}
+
+@media (min-width: 1680px) {
+  html{font-size: 16px !important;}
+}
+@media (min-width: 1920px) {
+  html{font-size: 16px !important;}
+}
+
+
+@function px2rem($px) {
+  $baseValue: 16px;
+  $rem: ($px/$baseValue) + rem;
+  @return $rem;
+}
+
+.base {
+  margin: 0 0 !important;
+  padding: 0 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: black;
+}
+
+html, body {
+  @extend .base;
+}
