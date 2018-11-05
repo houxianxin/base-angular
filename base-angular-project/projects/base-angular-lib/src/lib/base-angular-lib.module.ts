@@ -1,21 +1,18 @@
 import {InjectionToken, NgModule} from '@angular/core';
 import {BaseAngularLibComponent} from './base-angular-lib.component';
 import {HttpClientModule} from '@angular/common/http';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {Logger} from './util/logger';
 
 @NgModule({
   imports: [
-    HttpClientModule,
-    FlexLayoutModule
+    HttpClientModule
   ],
   declarations: [
     BaseAngularLibComponent
   ],
   exports: [
     BaseAngularLibComponent,
-    HttpClientModule,
-    FlexLayoutModule
+    HttpClientModule
   ],
   providers: [
     Logger
