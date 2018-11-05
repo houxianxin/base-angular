@@ -11,7 +11,7 @@
     "build.libs.base-angular-lib": "ng build base-angular-lib",
     "build.libs": "npm run build.libs.base-angular-lib",
     "build.prod": "npm run build.libs && ng build --prod",
-    "publish": "npm run build.prod && cd ./dist/base-angular-lib && npm publish && cd ../.."
+    "publish": "npm run build.prod && cd ./dist/base-angular-lib && npm publish --tag=beta && cd ../.."
   },
   "private": true,
   "dependencies": {

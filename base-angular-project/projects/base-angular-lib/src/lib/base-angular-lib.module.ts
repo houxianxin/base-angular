@@ -1,14 +1,12 @@
-import {NgModule} from '@angular/core';
+import {InjectionToken, NgModule} from '@angular/core';
 import {BaseAngularLibComponent} from './base-angular-lib.component';
 import {HttpClientModule} from '@angular/common/http';
-import {TranslateModule} from '@ngx-translate/core';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {Logger} from './util/logger';
 
 @NgModule({
   imports: [
     HttpClientModule,
-    TranslateModule,
     FlexLayoutModule
   ],
   declarations: [
@@ -17,7 +15,6 @@ import {Logger} from './util/logger';
   exports: [
     BaseAngularLibComponent,
     HttpClientModule,
-    TranslateModule,
     FlexLayoutModule
   ],
   providers: [
@@ -25,4 +22,9 @@ import {Logger} from './util/logger';
   ]
 })
 export class BaseAngularLibModule {
+}
+
+export const BASE_ANGULAR_LIB_MODULE_CONFIG_TOKEN = new InjectionToken<BaseAngularLibModuleConfig>('BaseAngularLibModuleConfigToken');
+
+export abstract class BaseAngularLibModuleConfig {
 }
